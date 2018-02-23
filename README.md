@@ -2,8 +2,8 @@
 QMUI 腾讯Android UI 框架<br> 
 ## 使用方法：
 导包<br>
-```
-    // QQ UI
+```java
+    // QQ UI
     compile 'com.qmuiteam:qmui:1.0.7'
     compile 'com.qmuiteam:arch:0.0.1'
     // 注解开发
