@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="?app_primary_color">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        n1:id="@+id/topbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?qmui_topbar_height" />
+
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="?qmui_topbar_height"
+        n1:background="@color/qmui_config_color_white">
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical"
+            n1:paddingLeft="@dimen/qmui_content_spacing_horizontal"
+            n1:paddingRight="@dimen/qmui_content_spacing_horizontal">
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n2="http://schemas.android.com/apk/res-auto"
+                    n1:id="@+id/test1"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerInParent="true"
+                    n1:paddingBottom="10.0dip"
+                    n1:paddingLeft="16.0dip"
+                    n1:paddingRight="16.0dip"
+                    n1:paddingTop="10.0dip"
+                    n1:text="圆角为高度的一半"
+                    n2:qmui_isRadiusAdjustBounds="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n3="http://schemas.android.com/apk/res-auto"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerInParent="true"
+                    n1:clickable="true"
+                    n1:gravity="center"
+                    n1:padding="10.0dip"
+                    n1:text="指定圆角大小"
+                    n3:qmui_radius="4.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <FrameLayout
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerInParent="true">
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n4="http://schemas.android.com/apk/res-auto"
+                        n1:layout_width="60.0dip"
+                        n1:layout_height="60.0dip"
+                        n1:gravity="center"
+                        n1:text="指"
+                        n4:qmui_radiusTopLeft="8.0dip" />
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n5="http://schemas.android.com/apk/res-auto"
+                        n1:layout_width="60.0dip"
+                        n1:layout_height="60.0dip"
+                        n1:layout_marginLeft="64.0dip"
+                        n1:gravity="center"
+                        n1:text="定"
+                        n5:qmui_radiusTopRight="8.0dip" />
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n6="http://schemas.android.com/apk/res-auto"
+                        n1:layout_width="60.0dip"
+                        n1:layout_height="60.0dip"
+                        n1:layout_marginTop="64.0dip"
+                        n1:gravity="center"
+                        n1:text="方"
+                        n6:qmui_radiusBottomLeft="8.0dip" />
+
+                    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n7="http://schemas.android.com/apk/res-auto"
+                        n1:layout_width="60.0dip"
+                        n1:layout_height="60.0dip"
+                        n1:layout_marginLeft="64.0dip"
+                        n1:layout_marginTop="64.0dip"
+                        n1:gravity="center"
+                        n1:text="向"
+                        n7:qmui_radiusBottomRight="8.0dip" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton xmlns:n8="http://schemas.android.com/apk/res-auto"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerInParent="true"
+                    n1:clickable="true"
+                    n1:gravity="center"
+                    n1:padding="10.0dip"
+                    n1:text="更改 border 颜色和宽度"
+                    n1:textColor="@color/qmui_s_link_color"
+                    n8:qmui_borderColor="@color/qmui_s_link_color"
+                    n8:qmui_borderWidth="1.0px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:orientation="vertical">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        n1:id="@+id/topbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?qmui_topbar_height" />
+
+    <android.support.v7.widget.RecyclerView
+        n1:id="@+id/recyclerView"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="?qmui_topbar_height" />
+</merge>

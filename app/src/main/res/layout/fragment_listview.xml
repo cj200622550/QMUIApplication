@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="?app_primary_color">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        n1:id="@+id/topbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?qmui_topbar_height" />
+
+    <ListView
+        n1:id="@+id/listview"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="?qmui_topbar_height"
+        n1:background="@color/qmui_config_color_white"
+        n1:divider="@null"
+        n1:dividerHeight="0.0dip" />
+</FrameLayout>
